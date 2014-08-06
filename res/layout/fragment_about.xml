@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+        android:padding="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/about_moduleuses" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:orientation="vertical"
+	        android:background="@color/list_divider" 
+	        android:layout_marginTop="15dp" >
+		</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:text="@string/about_developedby_title" />
+        <TextView
+            android:id="@+id/developedby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="@string/about_developedby" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:orientation="vertical"
+	        android:background="@color/list_divider" 
+	        android:layout_marginTop="15dp" >
+		</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:text="@string/about_moduleversion" />
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:orientation="vertical"
+	        android:background="@color/list_divider" 
+	        android:layout_marginTop="15dp" >
+		</LinearLayout>
+        <TextView
+            android:id="@+id/translatedby_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:text="@string/about_translatedby_title" />
+        <TextView
+            android:id="@+id/translatedby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="@string/about_translatedby" />
+	    <LinearLayout
+            android:id="@+id/translatedby_break"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:orientation="vertical"
+	        android:background="@color/list_divider" 
+	        android:layout_marginTop="15dp" >
+		</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:text="@string/about_support_title" />
+        <TextView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="@string/about_support" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:orientation="vertical"
+	        android:background="@color/list_divider" 
+	        android:layout_marginTop="15dp" >
+		</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:text="Donate:" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        <Button
+		        android:id="@+id/clickButton"
+		        android:layout_width="0dp"
+      			android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="PayPal"
+		    />
+	        <Button
+		        android:id="@+id/buyButton"
+		        android:layout_width="0dp"
+      			android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="Google Play"
+		    />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:padding="15dp"  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingBottom="15dp" >
+        <Switch
+            android:id="@+id/sfinder_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sfinderqconnect_sfinder_button" />
+        <EditText
+            android:id="@+id/sfinder_textfield"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/sfinderqconnect_sfinder_text" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp" >
+        <Switch
+            android:id="@+id/qconnect_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sfinderqconnect_qconnect_button" />
+        <EditText
+            android:id="@+id/qconnect_textfield"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/sfinderqconnect_qconnect_text" />
+    </LinearLayout>
+
+</LinearLayout>

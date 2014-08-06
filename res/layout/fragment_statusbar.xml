@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:padding="15dp"  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingBottom="15dp" >
+		<Switch
+			android:id="@+id/notificationbar_hidden"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/notificationbar_hidden" />
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingBottom="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:text="@string/notification_brightness" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall" 
+			android:text="@string/notification_brightness_location" />
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingBottom="15dp" >
+		<Switch
+			android:id="@+id/notification_batteryfull"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/notification_batteryfull" />
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingBottom="15dp" >
+		<Switch
+			android:id="@+id/statusbar_carrier"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/statusbar_carrier" />
+	</LinearLayout>
+</LinearLayout>

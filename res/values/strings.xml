@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Application -->
+	<string name="app_name" translatable="false">Xposed G-Touchwiz</string>
+	<string name="xposeddescription" translatable="false">Galaxy S5 tweaks for the new TouchWiz interface!</string>
+	<string name="areyousure">Are you sure?</string>
+
+	<!-- Nav Drawer Menu Items -->
+	<string-array name="nav_drawer_items">
+		<item>Welcome</item>
+		<item>S-Finder &amp; Q-Connect</item>
+		<item>Statusbar</item>
+		<item>Popups</item>
+		<item>Changelog</item>
+		<item>About</item>
+	</string-array>
+
+	<!-- General -->
+	<string name="general_welcome">Welcome in <b>Xposed G-Touchwiz</b>!</string>
+	<string name="general_restart_systemui">Restart SystemUI</string>
+	<string name="general_restart_popupuireceiver">Restart PopupUiReceiver</string>
+	<string name="general_restart_requiresbusyboxroot">* Requires busybox and root</string>
+	
+	<!-- General: Alert -->
+	<string name="general_alert_xposed_title">Xposed Framework</string>
+	<string name="general_alert_xposed">The Xposed Framework is not installed on this device.</string>
+	<string name="general_alert_download">Download Xposed</string>
+	<string name="general_alert_exit">Exit</string>
+	
+	<!-- S-Finder & Q-Connect -->
+	<string name="sfinderqconnect_sfinder_button">Disable S-Finder button</string>
+	<string name="sfinderqconnect_sfinder_text">S-Finder button text</string>
+	<string name="sfinderqconnect_qconnect_button">Disable Quick Connect button</string>
+	<string name="sfinderqconnect_qconnect_text">Quick Connect button text</string>
+
+	<!-- Statusbar -->
+	<string name="notificationbar_hidden">Hide notification bar \n(including \&quot;clear\&quot; button)</string>
+	<string name="notification_brightness">Disable brightness adjustment</string>
+	<string name="notification_brightness_location">Settings -> (Sound and Display ->) Notification panel</string>
+	<string name="notification_batteryfull">Hide battery full notification</string>
+	<string name="statusbar_carrier">Hide carrier in the statusbar</string>
+
+	<!-- Popups -->
+	<string name="popups_batterycover">Disable battery cover popup</string>
+	<string name="popups_usbcover">Disable USB cover popup</string>
+
+	<!-- Changelog -->
+
+	<!-- About -->
+	<string name="about_moduleuses">This module uses the Xposed Framework</string>
+	<string name="about_developedby_title">Developed by:</string>
+	<string name="about_developedby">- <a href="http://gertjananema.nl">Gert-Jan Anema</a></string>
+	<string name="about_moduleversion">Version of the module:</string>
+	<string name="about_translatedby_title">Translated by:</string>
+	<string name="about_translatedby"></string>
+	<string name="about_support_title">Get support at:</string>
+	<string name="about_support"><a href="http://forum.xda-developers.com/xposed/modules/mod-xposed-g-touchwiz-t2755920">http://forum.xda-developers.com/xposed/modules/mod-xposed-g-touchwiz-t2755920</a></string>
+
+	
+	
+    <string name="show_auto_brightness_checkbox_key">ShowAutoBrightnessCheckboxKey</string>
+    <string name="show_auto_brightness_checkbox_title">Show Auto Brightness Checkbox</string>
+    <string name="show_auto_brightness_checkbox_summary">Show or Hide Brightness Checkbox, when Brightness icon click\nPlease perform the brightness control when it does not appear</string>
+
+    <string name="automatic_brightness">Auto</string>
+    
+</resources>

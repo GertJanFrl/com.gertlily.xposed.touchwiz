@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta charset="utf-8"/>
+	<style>
+	body {
+		color: white;
+	}
+	b {
+		margin: 0;
+		padding: 0;
+	}
+	small {
+		float: right;
+		font-size: 10px;
+		text-align: right;
+	}
+	ul {
+		margin: 0;
+		margin-top: 5px;
+		font-size: 12px;
+	}
+	p {
+		margin: 0;
+		font-size: 11px;
+	}
+	div {
+		height: 1px;
+		color: #013540;
+		margin: 10px 0; 
+		background: #013540;
+	}
+	ul li.title {
+		margin-top: 15px;
+		list-style: none;
+		font-weight: bold;
+		margin-left: -15px;
+		font-style: italic;
+	}
+	ul ul {
+		margin-top: 0px;
+		margin-left: -25px;
+	}
+	ul ul li.small {
+		font-size: 10px;
+	}
+	</style>
+</head>
+<body>
+	<b>Version 1.**</b> <small>**-**-2014</small>
+	<ul>
+		<li>Added toggle to hide carrier in statusbar (top left)</li>
+		<li>No need to reboot after a change, just restart the SystemUI or the PopupUiReceiver</li>
+		<ul>
+			<li>Added restart SystemUI button *</li>
+			<li>Added restart PopupUiReceiver button *</li>
+			<li class="small">* requires busybox and root</li>
+		</ul>
+		<li>Better code optimization</li>
+		
+		<li class="title">- Goophone (MTK) Galaxy S5</li>
+		<li>Hide battery cover pop-up on Fake (mtk) S5</li>
+		<li>Hide USB cover pop-up on Fake (mtk) S5</li>
+	</ul>
+	
+	<div></div>
+
+	<b>Version 1.35</b> <small>14-07-2014</small>
+	<ul>
+		<li>Brand new interface (drawer menu)</li>
+		<li>Alert when the Xposed Framework is not installed</li>
+		<li>Disable full battery notification</li>
+		<li>Removed the reboot buttons, so no SuperSU permissions needed anymore!</li>
+		<li>Hide text boxes for the S-Finder & Q-Connect buttons when the buttons are hidden</li>
+		<li>Hide carrier in statusbar (top left) - No toggle available yet</li>
+	</ul>
+	
+	<div></div>
+	
+	<b>Version 0.96</b> <small>29-05-2014</small>
+	<ul>
+		<li>New application icon</li>
+		<li>Added the application to the Google Play Store</li>
+	</ul>
+	
+	<div></div>
+	
+	<b>Version 0.95</b>	<small>28-05-2014</small>
+	<ul>
+		<li>Changed way to hide both S-Finder and Q-Connect buttons, by disabling both the buttons</li>
+		<li>Disable the notification bar (with "clear" button)</li>
+		<li>Disable the check battery cover popup at boot</li>
+		<li>Disable the check USB cover popup when unplugging USB or power</li>
+	</ul>
+	<p>
+		Extra: <br />
+		Started working on changing the launch activity for the S-Finder and Q-Connect buttons (including custom text)
+	</p>
+	
+	<div></div>
+	
+	<b>Version 0.8</b> <small>20-05-2014</small>
+	<ul>
+		<li>Added settings interface</li>
+		<li>Added option to only disable 1 button or complete bar</li>
+		<li>Added soft reboot and reboot buttons</li>
+	</ul>
+	
+	<div></div>
+	
+	<b>Version 0.3</b> <small>18-05-2014</small>
+	<ul>
+		<li>Initial release</li>
+	</ul>
+</body>
+</html>

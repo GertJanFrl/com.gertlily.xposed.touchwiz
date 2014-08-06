@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:minHeight="64dip"
+    android:orientation="horizontal"
+    android:paddingBottom="8dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="4dip"
+    android:paddingTop="8dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dip"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:src="@drawable/ic_qs_brightness_auto_off" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="4dip"
+        android:layout_weight="1"
+        android:tag="slider" />
+
+    <CheckBox
+        android:id="@+id/automatic_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4.0dip"
+        android:gravity="center"
+        android:text="@string/automatic_brightness"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+</LinearLayout>
