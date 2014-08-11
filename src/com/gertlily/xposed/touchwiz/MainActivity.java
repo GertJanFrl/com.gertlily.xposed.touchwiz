@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import com.gertlily.xposed.touchwiz.adapter.NavDrawerListAdapter;
 import com.gertlily.xposed.touchwiz.fragments.FragmentChangelog;
 import com.gertlily.xposed.touchwiz.fragments.FragmentGeneral;
+import com.gertlily.xposed.touchwiz.fragments.FragmentHidden;
 import com.gertlily.xposed.touchwiz.fragments.FragmentSFinderQConnect;
 import com.gertlily.xposed.touchwiz.fragments.FragmentStatusbar;
 import com.gertlily.xposed.touchwiz.fragments.FragmentPopups;
@@ -87,8 +88,9 @@ public class MainActivity extends Activity {
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1])); // S-Finder & Q-Connect
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2])); // Notification Bar
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3])); // Popups
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4])); // Changelog
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5])); // About
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4])); // Hidden items
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5])); // Changelog
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6])); // About
 
 		mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
 
@@ -201,9 +203,12 @@ public class MainActivity extends Activity {
 			fragment = new FragmentPopups();
 			break;
 		case 4:
-			fragment = new FragmentChangelog();
+			fragment = new FragmentHidden();
 			break;
 		case 5:
+			fragment = new FragmentChangelog();
+			break;
+		case 6:
 			fragment = new FragmentAbout();
 			break;
 

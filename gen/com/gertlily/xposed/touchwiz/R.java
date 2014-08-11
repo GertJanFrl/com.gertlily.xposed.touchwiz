@@ -50,35 +50,34 @@ public final class R {
         public static final int notification_bottom_line=0x7f020008;
     }
     public static final class id {
-        public static final int automatic_mode=0x7f0c001b;
-        public static final int brightnessController=0x7f0c001c;
-        public static final int buyButton=0x7f0c000c;
-        public static final int clickButton=0x7f0c000b;
+        public static final int automatic_mode=0x7f0c001a;
+        public static final int brightnessController=0x7f0c001b;
         public static final int counter=0x7f0c0004;
         public static final int developedby=0x7f0c0005;
         public static final int drawer_layout=0x7f0c0000;
         public static final int frame_container=0x7f0c0001;
-        public static final int icon=0x7f0c0019;
+        public static final int icon=0x7f0c0018;
         public static final int list_slidermenu=0x7f0c0002;
-        public static final int notification_batteryfull=0x7f0c0017;
-        public static final int notificationbar_hidden=0x7f0c0016;
-        public static final int popups_batterycover=0x7f0c0010;
-        public static final int popups_usbcover=0x7f0c0011;
-        public static final int qconnect_switch=0x7f0c0014;
-        public static final int qconnect_textfield=0x7f0c0015;
-        public static final int restart_popupuireceiver=0x7f0c000f;
-        public static final int restart_systemui=0x7f0c000e;
-        public static final int seekbar=0x7f0c001a;
-        public static final int sfinder_switch=0x7f0c0012;
-        public static final int sfinder_textfield=0x7f0c0013;
-        public static final int statusbar_carrier=0x7f0c0018;
+        public static final int notification_batteryfull=0x7f0c0016;
+        public static final int notificationbar_hidden=0x7f0c0015;
+        public static final int popups_batterycover=0x7f0c000f;
+        public static final int popups_usbcover=0x7f0c0010;
+        public static final int qconnect_switch=0x7f0c0013;
+        public static final int qconnect_textfield=0x7f0c0014;
+        public static final int restart_popupuireceiver=0x7f0c000d;
+        public static final int restart_systemui=0x7f0c000c;
+        public static final int seekbar=0x7f0c0019;
+        public static final int sfinder_switch=0x7f0c0011;
+        public static final int sfinder_textfield=0x7f0c0012;
+        public static final int statusbar_carrier=0x7f0c0017;
         public static final int support=0x7f0c000a;
         public static final int title=0x7f0c0003;
+        public static final int torch_settings_button=0x7f0c000e;
         public static final int translatedby=0x7f0c0008;
         public static final int translatedby_break=0x7f0c0009;
         public static final int translatedby_title=0x7f0c0007;
         public static final int version=0x7f0c0006;
-        public static final int webview=0x7f0c000d;
+        public static final int webview=0x7f0c000b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -86,11 +85,12 @@ public final class R {
         public static final int fragment_about=0x7f030002;
         public static final int fragment_changelog=0x7f030003;
         public static final int fragment_general=0x7f030004;
-        public static final int fragment_popups=0x7f030005;
-        public static final int fragment_sfinder_qconnect=0x7f030006;
-        public static final int fragment_statusbar=0x7f030007;
-        public static final int toolbar_brightnessbar=0x7f030008;
-        public static final int toolbar_brightnessbar_main=0x7f030009;
+        public static final int fragment_hidden=0x7f030005;
+        public static final int fragment_popups=0x7f030006;
+        public static final int fragment_sfinder_qconnect=0x7f030007;
+        public static final int fragment_statusbar=0x7f030008;
+        public static final int toolbar_brightnessbar=0x7f030009;
+        public static final int toolbar_brightnessbar_main=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
@@ -99,22 +99,22 @@ public final class R {
         public static final int index=0x7f050000;
     }
     public static final class string {
-        public static final int about_developedby=0x7f080018;
-        public static final int about_developedby_title=0x7f080017;
+        public static final int about_developedby=0x7f08001b;
+        public static final int about_developedby_title=0x7f08001a;
         /**  Changelog 
  About 
          */
-        public static final int about_moduleuses=0x7f080016;
-        public static final int about_moduleversion=0x7f080019;
-        public static final int about_support=0x7f08001d;
-        public static final int about_support_title=0x7f08001c;
-        public static final int about_translatedby=0x7f08001b;
-        public static final int about_translatedby_title=0x7f08001a;
+        public static final int about_moduleuses=0x7f080019;
+        public static final int about_moduleversion=0x7f08001c;
+        public static final int about_support=0x7f080020;
+        public static final int about_support_title=0x7f08001f;
+        public static final int about_translatedby=0x7f08001e;
+        public static final int about_translatedby_title=0x7f08001d;
         /**  Application 
          */
         public static final int app_name=0x7f080000;
         public static final int areyousure=0x7f080002;
-        public static final int automatic_brightness=0x7f080021;
+        public static final int automatic_brightness=0x7f080024;
         public static final int general_alert_download=0x7f080009;
         public static final int general_alert_exit=0x7f08000a;
         public static final int general_alert_xposed=0x7f080008;
@@ -143,10 +143,15 @@ public final class R {
          */
         public static final int sfinderqconnect_sfinder_button=0x7f08000b;
         public static final int sfinderqconnect_sfinder_text=0x7f08000c;
-        public static final int show_auto_brightness_checkbox_key=0x7f08001e;
-        public static final int show_auto_brightness_checkbox_summary=0x7f080020;
-        public static final int show_auto_brightness_checkbox_title=0x7f08001f;
+        public static final int show_auto_brightness_checkbox_key=0x7f080021;
+        public static final int show_auto_brightness_checkbox_summary=0x7f080023;
+        public static final int show_auto_brightness_checkbox_title=0x7f080022;
         public static final int statusbar_carrier=0x7f080013;
+        public static final int torch_settings_button=0x7f080018;
+        public static final int torch_settings_description=0x7f080017;
+        /**  Hidden items 
+         */
+        public static final int torch_settings_title=0x7f080016;
         public static final int xposeddescription=0x7f080001;
     }
     public static final class style {

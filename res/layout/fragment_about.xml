@@ -94,29 +94,5 @@
 	        android:background="@color/list_divider" 
 	        android:layout_marginTop="15dp" >
 		</LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceMedium" 
-			android:text="Donate:" />
-	    <LinearLayout
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:orientation="horizontal" >
-	        <Button
-		        android:id="@+id/clickButton"
-		        android:layout_width="0dp"
-      			android:layout_weight="1"
-		        android:layout_height="wrap_content"
-		        android:text="PayPal"
-		    />
-	        <Button
-		        android:id="@+id/buyButton"
-		        android:layout_width="0dp"
-      			android:layout_weight="1"
-		        android:layout_height="wrap_content"
-		        android:text="Google Play"
-		    />
-		</LinearLayout>
 	</LinearLayout>
 </ScrollView>

@@ -11,6 +11,7 @@
 		<item>S-Finder &amp; Q-Connect</item>
 		<item>Statusbar</item>
 		<item>Popups</item>
+		<item>Hidden items</item>
 		<item>Changelog</item>
 		<item>About</item>
 	</string-array>
@@ -44,6 +45,11 @@
 	<string name="popups_batterycover">Disable battery cover popup</string>
 	<string name="popups_usbcover">Disable USB cover popup</string>
 
+	<!-- Hidden items -->
+	<string name="torch_settings_title">Torch</string>
+	<string name="torch_settings_description">Enable volume up button to start torch when screen is off (Hidden samsung setting)</string>
+	<string name="torch_settings_button">Open Torch settings</string>
+	
 	<!-- Changelog -->
 
 	<!-- About -->
