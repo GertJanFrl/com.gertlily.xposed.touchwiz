@@ -3,9 +3,12 @@ package com.gertlily.xposed.touchwiz;
 import java.text.DateFormat;
 import java.util.Calendar;
 
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import de.robv.android.xposed.IXposedHookInitPackageResources;
@@ -113,6 +116,8 @@ public class All implements IXposedHookInitPackageResources, IXposedHookLoadPack
 				    resparam.res.setReplacement("com.android.systemui", "string", "accessibility_qconnect_button", PreferencesHelper.QConnectTextField);	
 		    	}
 		    } catch (Exception e) { logError("SystemUI", "SFinder / QConnect textField", e); }
+		    
+		    resparam.res.setReplacement("com.android.systemui", "color", "toggle_slider_background_color", Color.parseColor("#005565"));	
 
 		    // Testing (beta / alpha)
 //		    resparam.res.hookLayout("com.android.systemui", "layout", "flip_settings", new XC_LayoutInflated() {
@@ -139,6 +144,27 @@ public class All implements IXposedHookInitPackageResources, IXposedHookLoadPack
 //					flipSettings.setLayoutParams(params);
 //				}
 //		    });
+		    resparam.res.hookLayout("com.android.systemui", "layout", "status_bar_expanded_header", new XC_LayoutInflated() {
+				@Override
+				public void handleLayoutInflated(LayoutInflatedParam liparam) throws Throwable {
+					try {
+						FrameLayout editButtonHolder = (FrameLayout) liparam.view.findViewById(liparam.res.getIdentifier("edit_button_holder", "id", "com.android.systemui"));
+				    	android.view.ViewGroup.LayoutParams editButtonHolderParams = editButtonHolder.getLayoutParams();
+				    	editButtonHolderParams.height = 0;
+				    	editButtonHolder.setLayoutParams(editButtonHolderParams);
+				    	
+				    	ImageView expandedDivider3 = (ImageView) liparam.view.findViewById(liparam.res.getIdentifier("expanded_divider_3", "id", "com.android.systemui"));
+				    	android.view.ViewGroup.LayoutParams expandedDivider3Params = expandedDivider3.getLayoutParams();
+				    	expandedDivider3Params.height = 0;
+				    	expandedDivider3.setLayoutParams(expandedDivider3Params);
+				    	
+//				    	FrameLayout settingsButtonHolder = (FrameLayout) liparam.view.findViewById(liparam.res.getIdentifier("settings_button_holder", "id", "com.android.systemui"));
+//				    	android.view.ViewGroup.LayoutParams settingsButtonHolderParams = settingsButtonHolder.getLayoutParams();
+//				    	settingsButtonHolderParams.height = 0;
+//				    	settingsButtonHolder.setLayoutParams(settingsButtonHolderParams);
+				    } catch (Exception e) { logError("SystemUI", "Statusbar icons (edit & toggles)", e); }
+				}
+		    });
 		    
 		    // Stable 
 		    resparam.res.hookLayout("com.android.systemui", "layout", "status_bar", new XC_LayoutInflated() {
@@ -155,7 +181,8 @@ public class All implements IXposedHookInitPackageResources, IXposedHookLoadPack
 		    });
 		    resparam.res.hookLayout("com.android.systemui", "layout", "status_bar_expanded", new XC_LayoutInflated() {
 				@Override
-		        public void handleLayoutInflated(LayoutInflatedParam liparam) throws Throwable {
+		        public void handleLayoutInflated(LayoutInflatedParam liparam) throws Throwable {  
+					
 					try {
 			    		if(PreferencesHelper.SQLayoutSFinder) {
 			    			hideSQButton(liparam, "sfinder_button_big");

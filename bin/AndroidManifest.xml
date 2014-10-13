@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gertlily.xposed.touchwiz"
     android:versionCode="2"
-    android:versionName="1.** (52) beta"
+    android:versionName="1.** (53) beta"
     android:installLocation="auto" >
     
     <uses-sdk
